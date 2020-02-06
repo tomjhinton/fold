@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "webpack-dev-server --mode=development",
+    "seed": "node seeds",
     "build": "webpack -p",
-    "deploy": "yarn build && gh-pages -d dist"
+    "serve": "webpack-dev-server",
+    "serve:flask": "pipenv run flask run -p 4000",
+    "postinstall": "[ \"$NODE_ENV\" = \"production\" ] && yarn build || exit 0"
   },
   "repository": "git@github.com:tomjhinton/fold.git",
   "author": "Tom Hinton <tomjhinton@gmail.com>",
@@ -15,6 +16,7 @@
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
+    "axios": "^0.19.2",
     "babel-loader": "^8.0.6",
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.2.0",

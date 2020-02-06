@@ -4,7 +4,15 @@
 }
 *{
   font-family: 'Art';
-  font-size: 1em;
+  font-size: 5vh;
+  background-size:contain;
+  background-repeat: no-repeat;
+
+
+}
+img{
+  max-width: 100%;
+ height: auto;
 }
 // body {
 //   font-family: sans-serif;
@@ -79,7 +87,7 @@
   padding-bottom: 75%;
 }
 .green {
-  background-color: lightgreen;
+
 }
 .blue {
   background-color: lightblue;
