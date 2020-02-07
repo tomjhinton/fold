@@ -11,15 +11,6 @@ class Work(db.Entity):
 
 
 
-
-
-
-
-
-
-
-
-
 class WorkSchema(Schema):
     id = fields.Int(dump_only=True)
     dat = fields.String(required=True)

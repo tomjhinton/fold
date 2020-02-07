@@ -91,6 +91,7 @@ tick();
                 </div>
               )
             })}
+            {!this.state.works &&   <h1>The intersection of art  and technology</h1>}
 
             </div>
           </div>
